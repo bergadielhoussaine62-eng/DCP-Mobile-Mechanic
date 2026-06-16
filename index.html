@@ -1,19 +1,307 @@
-<h1>24/7 Mobile Mechanic Services</h1>
-<p>Professional Auto Repair At Your Home, Office, Or Roadside.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DCP Mobile Mechanic</title>
 
-<div class="stats">
-  <div>
-    <h2>500+</h2>
-    <span>Vehicles Repaired</span>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">DCP Mobile Mechanic</div>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+
+  <div class="overlay">
+
+    <h1>24/7 Mobile Mechanic Services</h1>
+
+    <p>
+      Fast, Reliable & Affordable Auto Repair At Your Location
+    </p>
+
+    <a href="tel:+15615555555" class="call-btn">
+      Call Now
+    </a>
+
+    <a href="https://wa.me/15615555555" class="whatsapp-btn">
+      WhatsApp
+    </a>
+
   </div>
 
-  <div>
-    <h2>5★</h2>
-    <span>Customer Rating</span>
-  </div>
+</section>
 
-  <div>
-    <h2>24/7</h2>
-    <span>Emergency Service</span>
-  </div>
+<section id="services">
+
+<h2>Our Services</h2>
+
+<div class="services-grid">
+
+<div class="card">
+<h3>Brake Repair</h3>
+<p>Professional brake repair service.</p>
 </div>
+
+<div class="card">
+<h3>Battery Replacement</h3>
+<p>Fast battery replacement.</p>
+</div>
+
+<div class="card">
+<h3>Oil Change</h3>
+<p>Quick oil change service.</p>
+</div>
+
+<div class="card">
+<h3>Diagnostics</h3>
+<p>Check engine diagnostics.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>Why Choose Us</h2>
+
+<div class="about-box">
+
+<div>
+<h3>Experienced Mechanics</h3>
+<p>Professional mobile technicians.</p>
+</div>
+
+<div>
+<h3>Fast Response</h3>
+<p>We come to your location quickly.</p>
+</div>
+
+<div>
+<h3>Affordable Pricing</h3>
+<p>Competitive prices for all repairs.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="reviews">
+
+<h2>Customer Reviews</h2>
+
+<div class="reviews">
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>Excellent service.</p>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>Fast and professional.</p>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>Highly recommended.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email">
+
+<textarea placeholder="Tell us your issue"></textarea>
+
+<button type="submit">
+Send Request
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 DCP Mobile Mechanic
+</p>
+
+</footer>
+
+</body>
+</html>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+}
+
+header{
+background:#0f172a;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+}
+
+.logo{
+color:white;
+font-size:28px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+height:100vh;
+background:url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.overlay{
+background:rgba(0,0,0,.65);
+padding:40px;
+border-radius:15px;
+}
+
+.overlay h1{
+color:white;
+font-size:55px;
+margin-bottom:20px;
+}
+
+.overlay p{
+color:white;
+font-size:20px;
+margin-bottom:20px;
+}
+
+.call-btn{
+background:#ff6b00;
+padding:15px 25px;
+color:white;
+text-decoration:none;
+border-radius:8px;
+margin-right:10px;
+}
+
+.whatsapp-btn{
+background:#25D366;
+padding:15px 25px;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+
+section{
+padding:80px 8%;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+}
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+.about-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.about-box div{
+background:white;
+padding:25px;
+border-radius:12px;
+}
+
+.reviews{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.review{
+background:white;
+padding:25px;
+border-radius:12px;
+}
+
+form{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,
+textarea{
+padding:15px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+button{
+background:#ff6b00;
+color:white;
+border:none;
+padding:15px;
+border-radius:8px;
+cursor:pointer;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
+}
