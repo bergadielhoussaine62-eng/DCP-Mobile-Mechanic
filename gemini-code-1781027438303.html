@@ -1,63 +1,210 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" id="lang-root">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سفر الذهبي | سفر متميز</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DCP Mobile Mechanic</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+header{
+    background:#0f172a;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1487754180451-c456f719a1fc');
+    background-size:cover;
+    background-position:center;
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:#f97316;
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.services{
+    padding:80px 8%;
+}
+
+.services h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#0f172a;
+}
+
+.about{
+    background:white;
+    padding:80px 8%;
+    text-align:center;
+}
+
+.contact{
+    padding:80px 8%;
+    text-align:center;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
 </head>
-<body class="bg-gray-50">
 
-    <nav class="bg-white p-6 shadow-sm flex justify-between items-center sticky top-0 z-50">
-        <h1 class="text-2xl font-black text-yellow-600">🕋 سفر الذهبي</h1>
-        <div class="flex gap-4 font-bold text-sm">
-            <a href="#home">الرئيسية</a>
-            <a href="#offers">عروض العمرة</a>
-            <a href="#branches">فروعنا</a>
-        </div>
+<body>
+
+<header>
+    <div class="logo">DCP Mobile Mechanic</div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
     </nav>
+</header>
 
-    <header id="home" class="h-[60vh] flex flex-col justify-center items-center text-center p-6 bg-yellow-900 text-white">
-        <h2 class="text-4xl font-black mb-4">رحلة العمرة بـ فخامة وخشوع</h2>
-        <a href="#register" class="bg-yellow-600 px-8 py-3 rounded-full font-bold">احجز مقعدك الآن</a>
-    </header>
+<section class="hero">
+    <div class="hero-content">
+        <h1>Professional Mobile Mechanic Services</h1>
+        <p>We come to your location and repair your vehicle quickly and professionally.</p>
 
-    <section id="offers" class="py-16 max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-black mb-8 text-center">عروض العمرة 2026</h2>
-        <div class="grid md:grid-cols-4 gap-4">
-            <div class="bg-white p-4 rounded-xl shadow border">عمرة رمضان</div>
-            <div class="bg-white p-4 rounded-xl shadow border">عمرة شعبان</div>
-            <div class="bg-white p-4 rounded-xl shadow border">عمرة رجب</div>
-            <div class="bg-white p-4 rounded-xl shadow border">عمرة المولد</div>
-        </div>
-    </section>
+        <a href="tel:+15615555555" class="btn">
+            Call Now
+        </a>
+    </div>
+</section>
 
-    <section id="branches" class="py-16 bg-white">
-        <h2 class="text-3xl font-black mb-12 text-center">فروعنا وأوقات العمل</h2>
-        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
-            <div class="border p-6 rounded-2xl">
-                <h3 class="font-bold text-lg mb-2">سلا الجديدة</h3>
-                <p class="text-sm mb-4">N° 5, Romana Garden, Av. Hassan 2</p>
-                <div class="h-40 bg-gray-200 rounded">خريطة هنا</div>
-            </div>
-            <div class="border p-6 rounded-2xl">
-                <h3 class="font-bold text-lg mb-2">الدار البيضاء</h3>
-                <p class="text-sm mb-4">2 Rue Oulad Teima, Casablanca</p>
-                <div class="h-40 bg-gray-200 rounded">خريطة هنا</div>
-            </div>
-        </div>
-        <div class="text-center mt-10 text-sm font-bold">
-            <p>الاثنين - الثلاثاء: 09:00 - 13:00 / 15:00 - 18:00</p>
-            <p>السبت: 09:00 - 13:00 | الأحد: مغلق</p>
-        </div>
-    </section>
+<section class="services" id="services">
+    <h2>Our Services</h2>
 
-    <section class="py-16 bg-gray-100 px-4">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl font-black mb-6">أسئلة شائعة</h2>
-            <div class="bg-white p-6 rounded-xl mb-4">ما هي الوثائق المطلوبة؟ جواز السفر، صور...</div>
+    <div class="grid">
+
+        <div class="card">
+            <h3>Battery Replacement</h3>
+            <p>Fast battery installation at your location.</p>
         </div>
-    </section>
+
+        <div class="card">
+            <h3>Brake Repair</h3>
+            <p>Professional brake inspection and repair.</p>
+        </div>
+
+        <div class="card">
+            <h3>Oil Change</h3>
+            <p>Quick oil changes wherever you are.</p>
+        </div>
+
+        <div class="card">
+            <h3>Diagnostics</h3>
+            <p>Engine light and vehicle diagnostics.</p>
+        </div>
+
+        <div class="card">
+            <h3>Starter Repair</h3>
+            <p>Starter replacement and troubleshooting.</p>
+        </div>
+
+        <div class="card">
+            <h3>Alternator Repair</h3>
+            <p>Complete charging system repair.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2>About Us</h2>
+
+    <p>
+        DCP Mobile Mechanic provides reliable mobile auto repair services.
+        We bring professional automotive solutions directly to your home,
+        office, or roadside location.
+    </p>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <p>Phone: (561) 555-5555</p>
+    <p>Email: info@dcpmobilemechanic.com</p>
+
+    <br>
+
+    <a class="btn" href="https://maps.google.com">
+        View Location
+    </a>
+</section>
+
+<footer>
+    © 2026 DCP Mobile Mechanic. All Rights Reserved.
+</footer>
 
 </body>
 </html>
