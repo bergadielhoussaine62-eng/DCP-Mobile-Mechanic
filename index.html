@@ -1,12 +1,15 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DCP Mobile Mechanic</title>
 
-<meta name="description" content="Professional Mobile Mechanic Services. We come to your location for repairs, diagnostics, battery replacement, brake repair and more.">
+<title>DCP Mobile Mechanic | 24/7 Mobile Auto Repair</title>
+
+<meta name="description" content="Professional Mobile Mechanic Services in West Palm Beach. Brake Repair, Battery Replacement, Diagnostics, Oil Changes and Roadside Assistance.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -14,7 +17,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:'Poppins',sans-serif;
 }
 
 html{
@@ -22,191 +25,204 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#f5f5f5;
-color:#333;
-line-height:1.6;
+background:#f8fafc;
+color:#1e293b;
+overflow-x:hidden;
 }
 
 header{
-background:#0f172a;
+position:fixed;
+top:0;
+left:0;
+width:100%;
 padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-position:sticky;
-top:0;
+background:#0f172a;
 z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.15);
 }
 
 .logo{
-color:white;
 font-size:28px;
-font-weight:bold;
+font-weight:800;
+color:#fff;
+}
+
+.logo span{
+color:#f97316;
 }
 
 nav a{
-color:white;
+color:#fff;
 text-decoration:none;
-margin-left:20px;
-font-weight:bold;
+margin-left:25px;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#f97316;
 }
 
 .hero{
 height:100vh;
-background:url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80");
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800&q=80");
 background-size:cover;
 background-position:center;
 display:flex;
-justify-content:center;
 align-items:center;
+justify-content:center;
 text-align:center;
+padding:20px;
 }
 
-.overlay{
-background:rgba(0,0,0,.65);
-padding:40px;
-border-radius:15px;
-max-width:700px;
+.hero-content{
+max-width:900px;
 }
 
 .hero h1{
+font-size:68px;
+font-weight:800;
 color:white;
-font-size:55px;
+line-height:1.1;
 margin-bottom:20px;
 }
 
 .hero p{
-color:white;
-font-size:20px;
-margin-bottom:30px;
+font-size:22px;
+color:#e2e8f0;
+margin-bottom:35px;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
 }
 
 .btn{
-display:inline-block;
-padding:14px 28px;
+padding:15px 32px;
 border-radius:8px;
+font-weight:700;
 text-decoration:none;
-font-weight:bold;
-margin:5px;
+transition:.3s;
 }
 
-.call{
+.call-btn{
 background:#f97316;
 color:white;
 }
 
-.whatsapp{
+.call-btn:hover{
+transform:translateY(-3px);
+}
+
+.whatsapp-btn{
 background:#25D366;
 color:white;
 }
 
-section{
-padding:80px 8%;
+.whatsapp-btn:hover{
+transform:translateY(-3px);
+}
+
+.stats{
+margin-top:60px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.stat{
+background:rgba(255,255,255,.1);
+backdrop-filter:blur(5px);
+padding:25px;
+border-radius:15px;
+}
+
+.stat h2{
+font-size:42px;
+color:#f97316;
+}
+
+.stat p{
+color:white;
+margin-top:5px;
+}
+
+.section{
+padding:100px 8%;
 }
 
 .section-title{
 text-align:center;
-margin-bottom:40px;
-font-size:36px;
+font-size:42px;
+font-weight:800;
+margin-bottom:15px;
 color:#0f172a;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+.section-subtitle{
+text-align:center;
+color:#64748b;
+max-width:700px;
+margin:auto;
+margin-bottom:60px;
 }
 
-.card{
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.service-card{
 background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 4px 15px rgba(0,0,0,.1);
+padding:35px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
 transition:.3s;
 }
 
-.card:hover{
-transform:translateY(-5px);
+.service-card:hover{
+transform:translateY(-8px);
 }
 
-.card h3{
-margin-bottom:10px;
+.service-icon{
+font-size:40px;
+margin-bottom:15px;
+}
+
+.service-card h3{
+margin-bottom:12px;
 color:#0f172a;
 }
 
-.why{
-background:white;
-}
-
-.review{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
-}
-
-.contact{
-background:#0f172a;
-color:white;
-}
-
-.contact form{
-max-width:700px;
-margin:auto;
-}
-
-.contact input,
-.contact textarea{
-width:100%;
-padding:15px;
-margin-bottom:15px;
-border:none;
-border-radius:8px;
-}
-
-.contact button{
-background:#f97316;
-color:white;
-border:none;
-padding:15px 30px;
-border-radius:8px;
-cursor:pointer;
-font-size:16px;
-}
-
-.map{
-padding:0;
-}
-
-iframe{
-width:100%;
-height:450px;
-border:0;
-}
-
-footer{
-background:#020617;
-color:white;
-text-align:center;
-padding:25px;
+.service-card p{
+color:#64748b;
 }
 
 @media(max-width:768px){
 
-header{
-flex-direction:column;
-}
-
-nav{
-margin-top:15px;
-}
-
 .hero h1{
-font-size:38px;
+font-size:42px;
 }
 
 .hero p{
 font-size:18px;
+}
+
+.stats{
+grid-template-columns:1fr;
+}
+
+nav{
+display:none;
 }
 
 }
@@ -217,7 +233,10 @@ font-size:18px;
 <body>
 
 <header>
-<div class="logo">DCP Mobile Mechanic</div>
+
+<div class="logo">
+DCP <span>Mobile Mechanic</span>
+</div>
 
 <nav>
 <a href="#home">Home</a>
@@ -226,139 +245,281 @@ font-size:18px;
 <a href="#reviews">Reviews</a>
 <a href="#contact">Contact</a>
 </nav>
+
 </header>
 
 <section class="hero" id="home">
-<div class="overlay">
-<h1>Mobile Mechanic Near You</h1>
+
+<div class="hero-content">
+
+<h1>
+24/7 Mobile Mechanic Services
+</h1>
 
 <p>
-Fast, Reliable & Affordable Vehicle Repairs At Your Location.
+Professional Auto Repair At Your Home, Office, Or Roadside Location.
+Fast, Reliable And Affordable Service.
 </p>
 
-<a href="tel:+15615555555" class="btn call">
+<div class="buttons">
+
+<a href="tel:+15615555555" class="btn call-btn">
 📞 Call Now
 </a>
 
-<a href="https://wa.me/15615555555" class="btn whatsapp">
+<a href="https://wa.me/15615555555" class="btn whatsapp-btn">
 WhatsApp
 </a>
+
 </div>
+
+<div class="stats">
+
+<div class="stat">
+<h2>500+</h2>
+<p>Vehicles Repaired</p>
+</div>
+
+<div class="stat">
+<h2>5★</h2>
+<p>Customer Rating</p>
+</div>
+
+<div class="stat">
+<h2>24/7</h2>
+<p>Emergency Service</p>
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<section id="services">
+<section class="section" id="services">
 
 <h2 class="section-title">
 Our Services
 </h2>
 
-<div class="grid">
+<p class="section-subtitle">
+Professional mobile auto repair services delivered directly to your location.
+</p>
 
-<div class="card">
+<div class="services-grid">
+
+<div class="service-card">
+<div class="service-icon">🔋</div>
 <h3>Battery Replacement</h3>
-<p>Fast battery installation wherever you are.</p>
+<p>Fast battery testing and replacement service.</p>
 </div>
 
-<div class="card">
+<div class="service-card">
+<div class="service-icon">🛑</div>
 <h3>Brake Repair</h3>
-<p>Professional brake inspection and repair.</p>
+<p>Brake inspection and complete repair services.</p>
 </div>
 
-<div class="card">
+<div class="service-card">
+<div class="service-icon">🛢️</div>
 <h3>Oil Change</h3>
-<p>Quick oil change service at your location.</p>
+<p>Quick and affordable oil change service.</p>
 </div>
 
-<div class="card">
+<div class="service-card">
+<div class="service-icon">⚙️</div>
 <h3>Diagnostics</h3>
-<p>Check engine light and diagnostics.</p>
-</div>
-
-<div class="card">
+<p>Check engine light and computer diagnostics.</p>
+</div><div class="service-card">
+<div class="service-icon">🚗</div>
 <h3>Starter Repair</h3>
-<p>Starter troubleshooting and replacement.</p>
+<p>Starter testing and replacement services.</p>
 </div>
 
-<div class="card">
+<div class="service-card">
+<div class="service-icon">🔧</div>
 <h3>Alternator Repair</h3>
-<p>Complete charging system repairs.</p>
+<p>Charging system diagnosis and repair.</p>
+</div>
+
+<div class="service-card">
+<div class="service-icon">🚨</div>
+<h3>Roadside Assistance</h3>
+<p>Emergency roadside help when you need it.</p>
+</div>
+
+<div class="service-card">
+<div class="service-icon">🛠️</div>
+<h3>Engine Repair</h3>
+<p>Professional engine troubleshooting.</p>
 </div>
 
 </div>
-
 </section>
 
-<section class="why" id="about">
+<section class="section" id="about" style="background:white;">
 
 <h2 class="section-title">
-Why Choose Us
+Why Choose DCP Mobile Mechanic
 </h2>
 
-<div class="grid">
+<p class="section-subtitle">
+Trusted by drivers across West Palm Beach for fast and reliable mobile auto repair.
+</p>
 
-<div class="card">
-<h3>Fast Response</h3>
-<p>We arrive quickly and get you back on the road.</p>
+<div class="services-grid">
+
+<div class="service-card">
+<h3>✓ Fast Response</h3>
+<p>We come directly to your location and get you back on the road quickly.</p>
 </div>
 
-<div class="card">
-<h3>Affordable Pricing</h3>
-<p>Quality service at competitive rates.</p>
+<div class="service-card">
+<h3>✓ Affordable Pricing</h3>
+<p>Transparent pricing with no hidden fees.</p>
 </div>
 
-<div class="card">
-<h3>Experienced Mechanics</h3>
-<p>Professional mobile technicians.</p>
+<div class="service-card">
+<h3>✓ Experienced Mechanics</h3>
+<p>Professional technicians with years of experience.</p>
+</div>
+
+<div class="service-card">
+<h3>✓ Mobile Convenience</h3>
+<p>No towing. No waiting. We come to you.</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="reviews">
+<section class="section" id="reviews">
 
 <h2 class="section-title">
 Customer Reviews
 </h2>
 
-<div class="grid">
+<p class="section-subtitle">
+See what our customers say about our service.
+</p>
 
-<div class="review">
+<div class="services-grid">
+
+<div class="service-card">
 ⭐⭐⭐⭐⭐
-<p>Excellent service and very professional.</p>
+<h3>Michael R.</h3>
+<p>
+My battery died at work and DCP came within 30 minutes.
+Excellent service.
+</p>
 </div>
 
-<div class="review">
+<div class="service-card">
 ⭐⭐⭐⭐⭐
-<p>Quick response and affordable pricing.</p>
+<h3>Sarah T.</h3>
+<p>
+Very professional mechanic. Honest pricing and great communication.
+</p>
 </div>
 
-<div class="review">
+<div class="service-card">
 ⭐⭐⭐⭐⭐
-<p>Highly recommend DCP Mobile Mechanic.</p>
+<h3>David W.</h3>
+<p>
+Fixed my brakes at home. Highly recommended.
+</p>
 </div>
 
 </div>
 
 </section>
 
-<section class="contact" id="contact">
+<section class="section" style="background:white;">
 
-<h2 class="section-title" style="color:white;">
+<h2 class="section-title">
+Service Areas
+</h2>
+
+<p class="section-subtitle">
+We proudly serve customers throughout Palm Beach County.
+</p>
+
+<div class="services-grid">
+
+<div class="service-card">
+West Palm Beach
+</div>
+
+<div class="service-card">
+Lake Worth
+</div>
+
+<div class="service-card">
+Wellington
+</div>
+
+<div class="service-card">
+Palm Beach Gardens
+</div>
+
+<div class="service-card">
+Royal Palm Beach
+</div>
+
+<div class="service-card">
+Greenacres
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Frequently Asked Questions
+</h2>
+
+<div class="service-card">
+<h3>How quickly can you arrive?</h3>
+<p>Most calls are answered within 30-60 minutes depending on location.</p>
+</div>
+
+<br>
+
+<div class="service-card">
+<h3>Do you work on all vehicle brands?</h3>
+<p>Yes, we service most domestic and foreign vehicles.</p>
+</div>
+
+<br>
+
+<div class="service-card">
+<h3>Do you offer emergency repairs?</h3>
+<p>Yes, emergency roadside services are available.</p>
+</div>
+
+</section><section class="section contact-section" id="contact">
+
+<h2 class="section-title">
 Contact Us
 </h2>
 
-<form>
+<p class="section-subtitle">
+Need a mobile mechanic? Contact us today.
+</p>
 
-<input type="text" placeholder="Your Name">
+<form class="contact-form">
 
-<input type="email" placeholder="Your Email">
+<input type="text" placeholder="Your Name" required>
 
-<input type="tel" placeholder="Phone Number">
+<input type="email" placeholder="Email Address" required>
 
-<textarea rows="5" placeholder="Tell us about your vehicle issue"></textarea>
+<input type="tel" placeholder="Phone Number" required>
 
-<button type="submit">
+<textarea rows="6" placeholder="Describe Your Vehicle Problem"></textarea>
+
+<button type="submit" class="submit-btn">
 Send Request
 </button>
 
@@ -366,18 +527,181 @@ Send Request
 
 </section>
 
-<section class="map">
+<section>
 
 <iframe
-src="https://maps.google.com/maps?q=West%20Palm%20Beach&t=&z=13&ie=UTF8&iwloc=&output=embed">
+src="https://maps.google.com/maps?q=West%20Palm%20Beach&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="450"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
 </iframe>
 
 </section>
 
+<a href="https://wa.me/15615555555" class="floating-whatsapp">
+💬
+</a>
+
+<a href="tel:+15615555555" class="floating-call">
+📞
+</a>
+
 <footer>
-© 2026 DCP Mobile Mechanic | All Rights Reserved
+
+<div class="footer-content">
+
+<h2>DCP Mobile Mechanic</h2>
+
+<p>
+Professional Mobile Auto Repair Services Available 24/7.
+</p>
+
+<br>
+
+<p>
+Phone: (561) 555-5555
+</p>
+
+<p>
+West Palm Beach, Florida
+</p>
+
+<br>
+
+<p>
+© 2026 DCP Mobile Mechanic. All Rights Reserved.
+</p>
+
+</div>
+
 </footer>
+
+<style>
+
+.contact-form{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:15px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+}
+
+.submit-btn{
+background:#f97316;
+color:white;
+border:none;
+padding:15px;
+font-size:18px;
+font-weight:700;
+border-radius:10px;
+cursor:pointer;
+}
+
+.submit-btn:hover{
+opacity:.9;
+}
+
+footer{
+background:#0f172a;
+color:white;
+padding:60px 8%;
+text-align:center;
+}
+
+.floating-whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+background:#25D366;
+display:flex;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+font-size:28px;
+border-radius:50%;
+z-index:999;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+.floating-call{
+position:fixed;
+bottom:95px;
+right:20px;
+width:60px;
+height:60px;
+background:#f97316;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+font-size:28px;
+border-radius:50%;
+z-index:999;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+.fade-in{
+opacity:0;
+transform:translateY(40px);
+transition:all .8s ease;
+}
+
+.fade-in.show{
+opacity:1;
+transform:translateY(0);
+}
+
+</style>
+
+<script>
+
+const cards = document.querySelectorAll('.service-card');
+
+const observer = new IntersectionObserver(entries => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting){
+
+entry.target.classList.add('show');
+
+}
+
+});
+
+});
+
+cards.forEach(card => {
+
+card.classList.add('fade-in');
+
+observer.observe(card);
+
+});
+
+document.querySelector('.contact-form')
+.addEventListener('submit',function(e){
+
+e.preventDefault();
+
+alert('Thank you! We will contact you shortly.');
+
+});
+
+</script>
 
 </body>
 </html>
-```
